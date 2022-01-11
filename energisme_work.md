@@ -4,30 +4,22 @@
 
 ### Current Team structure
 
-The team is composed of 1 Manager(dev), a Tech lead, 4 Developers and 1 Apprentice.
-
-The work is then split between feature team:
-
-* 2 standard feature team (Lead dev + 1 dev + external front devs) (Lead dev + 1 dev + 1
-  apprentice + external front devs)
-* 1 Technical feature team (Manager + Tech Lead + 1 dev)
-
-Currently, the lead dev changes every 11 weeks for the standard feature team.
-
-Some projects are done outside the feature teams' workflow and sometimes with the support
-of other teams such as devops (infrastructure), ML.
+1 Manager 1 Tech lead 1 Dev 1 Devops
 
 ## Current work:
 
-### Technical Feature Team - Backend developer
+### Product Team Datalake - Backend developer
 
-* Solving performance issues on different applications(slow api calls, high memory usage,
-  OOM).
-* Optimization of reactive applications.
-* Data migration (cassandra/elasticsearch) to another azure location:
-    * Dsbulk/CQLSH
-    * Bash
-    * Rust
+
+### Rust self-training 2 Days/month
+
+#### December
+
+* Finished Rust book 
+
+#### January
+
+* TBD
 
 ## Additional work
 
@@ -57,6 +49,123 @@ of other teams such as devops (infrastructure), ML.
   selected topic (30 min to 1h30)
 
 ## Previous work (Reverse chronological order):
+
+### Previously Technical Feature Team - Backend developer (2018-2021)
+
+The team is composed of 1 Manager(dev), a Tech lead, 5 Developers.
+
+The work is then split between feature team:
+
+* 2 standard feature team (Lead dev + 2 dev + external front devs) (Lead dev + 1 dev + 1
+  apprentice + external front devs)
+* 1 Technical feature team (Manager + Tech Lead + 1 dev)
+
+Currently, the lead dev changes every 11 weeks for the standard feature team.
+
+Some projects are done outside the feature teams' workflow and sometimes with the support
+of other teams such as devops (infrastructure), ML.
+
+#### Main subject:
+
+* Application security
+* Authorization/authentication flow and upgrade
+* Access-control
+* Automation of tedious tasks
+* Pair Programming
+* Code Review
+* Review feature Architecture/Design
+* k8s migration (helm+argocd)
+* APIM improvement
+* Writing Documentation
+* Solving performance issues on different applications(slow api calls, high memory usage,
+  OOM).
+* Optimization of reactive applications.
+* Observability(opentelemetry + jaeger + sleuth)
+* Data migration (cassandra/elasticsearch) to another azure location:
+    * Dsbulk/CQLSH
+    * Bash
+    * Rust
+
+## Q4 2021
+
+### PaaS Migration
+
+* Upgrade kubernetes add-ons (traefik, prometheus-stack, filebeat) so it can be deployed
+  via our Paas offer
+
+### Kubernetes migration
+
+Migrate monitoring tooling to kubernetes using dedicated CRD
+
+* Prometheus-stack (helm chart)
+    * Configure metrics scraping for the middlewares  (cassandra elasticsearch kafka)
+* Prometheus-adapter (helm chart)
+    * Configure custom autoscaling rules
+
+### Observability
+
+* Prepare core library for spring-cloud-sleuth-otel (opentelemetry)
+* Add tracing support to Elasticsearch client and Spring Reactive Elastic client
+* Instrument maven build (via maven otel plugin)
+
+### Azure Managed Cassandra
+
+* Evaluate cost & perf migration to AMC
+* Poc & restitution
+
+### Performance Improvement
+
+* profiling & jvm tuning
+
+## Q3 2021
+
+### Tutor Intern for 3 months
+
+* Pair Programming/Review
+
+### Platform & Application security
+
+* Design & Implementation of major security/authorization improvement
+    * Application security
+    * Authorization/authentication flow and upgrade
+    * Organization based Access-control
+* Coordinate the changes with other dev teams
+
+## Q2 2021
+
+### Astra Datastax Migration
+
+* Prepare migration to Astra (data migration, perf analysis, non regression testing)
+
+### Kubernetes migration
+
+* Prepare migration from docker swarm to k8s for 20+ microservice (springboot) :
+    * remove use of config server + discovery to leverage the native option of k8s
+    * Prepare helm starter chart for backend services (app configuration, ingress + tls,
+      autoscaling)
+    * Argocd for gitops
+
+Stack:
+
+* AKS
+* Argocd
+* Helm
+* Spring boot
+* Java 16
+* Traefik
+
+## Q1 2021
+
+### Training Kubernetes (self training & linux foundation training)
+
+https://www.credly.com/badges/f15d292b-ceca-4724-9965-9b82f7c541e1?source=linked_in_profile
+
+### *APIM project* - Azure Api Management automatic deployment
+
+Provide a simple configuration project with ci/cd pipelines for all dev teams wanting to
+expose & secure their Api
+
+## Q4 2020
 
 ### *APIM project* - Azure Api Management automatic deployment
 
@@ -96,7 +205,7 @@ pull latest spec from int instances &&
 
 Deploy-INT pipeline -> (
 deploy the generated configuration via Ansible Playbook to the Azure apim int &&
- automtic merge the diff to INT
+ automatic merge the diff to INT
 )
 ```
 
