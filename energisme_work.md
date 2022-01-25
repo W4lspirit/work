@@ -8,26 +8,28 @@
 
 ## Current work:
 
-### Product Team Datalake - Backend developer
-
+### Product Team "Datalake" Datastore - Backend developer
 
 ### Rust self-training 2 Days/month
 
 #### December
 
-* Finished Rust book 
+* Finished Rust book
 
 #### January
+
+* Finished Rustlings Exercise
+* Started Rust in Action Book Stop at chapter 6.9
+
+#### February
 
 * TBD
 
 ## Additional work
 
-* Provided advices and support material for functional programming and clean lambda in
-  Java
+* Provided advices and support material for functional programming and clean lambda in Java
 * Provide trick and tips on IntelliJ for the team :D
-* Customize the intellij Nyan Cat plugin so instead of the cat we had our manager face
-  encouraging us :D !
+* Customize the intellij Nyan Cat plugin so instead of the cat we had our manager face encouraging us :D !
 * Write Architecture Decision Records
 * Write our Developer Guidelines
 * Write technical/feature documentation
@@ -43,10 +45,9 @@
     * Endpoint response time degradation
 
 * Organized the 'Lunch and learn' meeting (during lunch time :D)
-  The objective is to deepen our knowledge on various technical subjects. Each week the
-  team would propose different technical topics Theory, framework, Paradigm, Language each
-  week then vote for the next topic. And the next week I would prepare a workshop on the
-  selected topic (30 min to 1h30)
+  The objective is to deepen our knowledge on various technical subjects. Each week the team would propose different
+  technical topics Theory, framework, Paradigm, Language each week then vote for the next topic. And the next week I
+  would prepare a workshop on the selected topic (30 min to 1h30)
 
 ## Previous work (Reverse chronological order):
 
@@ -56,14 +57,14 @@ The team is composed of 1 Manager(dev), a Tech lead, 5 Developers.
 
 The work is then split between feature team:
 
-* 2 standard feature team (Lead dev + 2 dev + external front devs) (Lead dev + 1 dev + 1
-  apprentice + external front devs)
+* 2 standard feature team (Lead dev + 2 dev + external front devs) (Lead dev + 1 dev + 1 apprentice + external front
+  devs)
 * 1 Technical feature team (Manager + Tech Lead + 1 dev)
 
 Currently, the lead dev changes every 11 weeks for the standard feature team.
 
-Some projects are done outside the feature teams' workflow and sometimes with the support
-of other teams such as devops (infrastructure), ML.
+Some projects are done outside the feature teams' workflow and sometimes with the support of other teams such as
+devops (infrastructure), ML.
 
 #### Main subject:
 
@@ -77,8 +78,7 @@ of other teams such as devops (infrastructure), ML.
 * k8s migration (helm+argocd)
 * APIM improvement
 * Writing Documentation
-* Solving performance issues on different applications(slow api calls, high memory usage,
-  OOM).
+* Solving performance issues on different applications(slow api calls, high memory usage, OOM).
 * Optimization of reactive applications.
 * Observability(opentelemetry + jaeger + sleuth)
 * Data migration (cassandra/elasticsearch) to another azure location:
@@ -90,8 +90,7 @@ of other teams such as devops (infrastructure), ML.
 
 ### PaaS Migration
 
-* Upgrade kubernetes add-ons (traefik, prometheus-stack, filebeat) so it can be deployed
-  via our Paas offer
+* Upgrade kubernetes add-ons (traefik, prometheus-stack, filebeat) so it can be deployed via our Paas offer
 
 ### Kubernetes migration
 
@@ -141,8 +140,7 @@ Migrate monitoring tooling to kubernetes using dedicated CRD
 
 * Prepare migration from docker swarm to k8s for 20+ microservice (springboot) :
     * remove use of config server + discovery to leverage the native option of k8s
-    * Prepare helm starter chart for backend services (app configuration, ingress + tls,
-      autoscaling)
+    * Prepare helm starter chart for backend services (app configuration, ingress + tls, autoscaling)
     * Argocd for gitops
 
 Stack:
@@ -162,8 +160,7 @@ https://www.credly.com/badges/f15d292b-ceca-4724-9965-9b82f7c541e1?source=linked
 
 ### *APIM project* - Azure Api Management automatic deployment
 
-Provide a simple configuration project with ci/cd pipelines for all dev teams wanting to
-expose & secure their Api
+Provide a simple configuration project with ci/cd pipelines for all dev teams wanting to expose & secure their Api
 
 ## Q4 2020
 
@@ -180,18 +177,17 @@ on the Azure APIM. And make the whole process painless for the backend developer
 * Azure ansible collection
 * azure-api-management-devops-resource-kit tools + runtime
 
--> Build a project for configuring the different resources of the Azure APIM and generate
-the corresponding ARM templates:
+-> Build a project for configuring the different resources of the Azure APIM and generate the corresponding ARM
+templates:
 
 * Api (generated from open api specification)
 * Product
 * User Group
 * Policies
 
--> Build the ci pipeline which retrieve the latest available Open APi Specification on the
-target env, generate the adequate ARM template, verify the coherence and invariant
-configuration. If there are modifications, push the changes to a deployment branch with
-automatic merge on success pipeline.
+-> Build the ci pipeline which retrieve the latest available Open APi Specification on the target env, generate the
+adequate ARM template, verify the coherence and invariant configuration. If there are modifications, push the changes to
+a deployment branch with automatic merge on success pipeline.
 
 Ex :
 
@@ -209,8 +205,7 @@ deploy the generated configuration via Ansible Playbook to the Azure apim int &&
 )
 ```
 
--> Create playbook & role for the deployment of the APIM ARM template with support for
-multi env/location.
+-> Create playbook & role for the deployment of the APIM ARM template with support for multi env/location.
 
 Stack:
 
@@ -242,8 +237,8 @@ Stack:
 
 ### *Bmad Project* - Lead Dev
 
-Building a project to provide a quick way to build energy-related Datasets for AI Team,
-Data scientist and Project Manager
+Building a project to provide a quick way to build energy-related Datasets for AI Team, Data scientist and Project
+Manager
 
 Stack:
 
@@ -271,8 +266,7 @@ Backend, Devops, Data-Acquisition & CTO)
 
 ### *Technical Feature Team* - Backend developer
 
--> In charge of building a reactive application which handles sensor time-series
-aggregation.
+-> In charge of building a reactive application which handles sensor time-series aggregation.
 
 Time constraint was 2 weeks This was my first application fully reactive.
 
@@ -286,13 +280,12 @@ Stack:
 
 ### *Energy modeling feature Team* - Lead dev  (1 year)
 
-This feature team started as an experiment since we previously did not have feature teams
-in the company. Main Topics: Sensor Data And aggregation, Meter Statement, Influencing
-Factor, Energy Model, Weather Station.
+This feature team started as an experiment since we previously did not have feature teams in the company. Main Topics:
+Sensor Data And aggregation, Meter Statement, Influencing Factor, Energy Model, Weather Station.
 
 * Common Tasks
-    * During Workshop with PO and Project Manager, provide Estimations(sizing), technical
-      conception, and slicing features into smaller sets
+    * During Workshop with PO and Project Manager, provide Estimations(sizing), technical conception, and slicing
+      features into smaller sets
     * Challenge PO on implicit performance issues , UI/UX bottleneck
     * Review stories and acceptance rules
     * Design technical implementations and write technical tickets for each story
@@ -317,9 +310,8 @@ Stack:
 
 ### *Java Migration 8 - 11:*
 
-* Created a presentation from scratch for the Backend team to prepare ourself for the
-  migration when Java 11 will be released (New features,JVM improvements, upgrade path,
-  Jdk vendors)
+* Created a presentation from scratch for the Backend team to prepare ourself for the migration when Java 11 will be
+  released (New features,JVM improvements, upgrade path, Jdk vendors)
 * Upgrade to Spring boot 2.2.1
 * Upgrade backend microservices
 
@@ -329,10 +321,9 @@ Stack:
 * Integration of PITD (point d'interface transport distribution) data
 * Data Historization:
     * System where each property of an object has a different value in time.
-    * Values are defined for a period and data is mutable, users can insert, remove,
-      replace values on periods smaller or larger than the previous, the system must
-      correct inconsistency and rearrange/merge periods.
-    * Users can filter on different properties on different periods and retrieve the value
-      of the object at a specific moment in time.
+    * Values are defined for a period and data is mutable, users can insert, remove, replace values on periods smaller
+      or larger than the previous, the system must correct inconsistency and rearrange/merge periods.
+    * Users can filter on different properties on different periods and retrieve the value of the object at a specific
+      moment in time.
 * Implemented Historization for Meter Domain
 * Create project to handle Action planning on the platform
