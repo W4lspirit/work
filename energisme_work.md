@@ -8,22 +8,45 @@
 
 ## Current work:
 
-### Product Team "Datalake" Datastore - Backend developer
+### Product Team "Datalake" Datastore - Backend developer S1 2022-XXX
+
+* State of the art
+* Review of different architecture and implementations
+* Review of storage engine/database
+* Architecture design/review with team & Architect
+* Implementation of different prototype/mvp using already deployed technologies & new ones
 
 ### Rust self-training 2 Days/month
 
-#### December
+#### Context
+
+I discovered rust, in 2017, third semester of my master degree in Computer Science,
+french Engineer came to do a small presentation about the use of rust for in Servo
+Since then I was pretty much amazed by it, and kept reading news about it and starting
+
+Already started learning rust on personal time early 2018 but failed to grasp/change habit on relying on IDE
+Started with zero to prod
+
+#### December 2021
 
 * Finished Rust book
 
-#### January
+#### January 2022
 
 * Finished Rustlings Exercise
-* Started Rust in Action Book Stop at chapter 6.9
+* Started Rust in Action Book Stop at chapter 6.3
 
-#### February
+#### February 2022
 
-* TBD
+* Finished Rust In Action:
+    * For Chapter 11&12 (Kernel&Signal) only read (no code written)
+* Continued Zero to prod
+
+#### March/April 2022
+
+* Finished last chapters of Zero to prod
+
+#### June/July/August 2022
 
 ## Additional work
 
@@ -66,7 +89,7 @@ Currently, the lead dev changes every 11 weeks for the standard feature team.
 Some projects are done outside the feature teams' workflow and sometimes with the support of other teams such as
 devops (infrastructure), ML.
 
-#### Main subject:
+#### Main topic:
 
 * Application security
 * Authorization/authentication flow and upgrade
@@ -90,7 +113,7 @@ devops (infrastructure), ML.
 
 ### PaaS Migration
 
-* Upgrade kubernetes add-ons (traefik, prometheus-stack, filebeat) so it can be deployed via our Paas offer
+* Upgrade kubernetes add-ons (traefik, prometheus-stack, filebeat) so it can be deployed via our PaaS offer
 
 ### Kubernetes migration
 
